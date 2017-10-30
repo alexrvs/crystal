@@ -11,16 +11,14 @@ class Router
     if routes.key?(path)
       ctrl(routes['path']).call
     else
-      Controller.new.not_found
+      Controller.new.not_fount
     end
 
   rescue Exception => error
     puts error.message
     puts error.backtrace
     Controller.new.internal_error
-
   end
-
 
   private
 

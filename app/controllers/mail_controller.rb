@@ -7,7 +7,7 @@ class MainController
 
 
   def hello
-
+    @test = 'h'
   end
 
 end
