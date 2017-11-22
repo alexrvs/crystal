@@ -6,4 +6,5 @@ gem 'rack'
 gem 'slim'
 gem 'sequel'
 gem 'sqlite3'
-
+gem 'stripe'
+gem 'pry'

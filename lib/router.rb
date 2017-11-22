@@ -27,4 +27,5 @@ class Router
     klass = Object.const_get "#{ctrl_name.capitalize}Controller"
     klass.new(name: ctrl_name, action: action_name.to_sym)
   end
+
 end

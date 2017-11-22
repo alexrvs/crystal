@@ -1,12 +1,22 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    coderay (1.1.2)
+    faraday (0.13.1)
+      multipart-post (>= 1.2, < 3)
+    method_source (0.9.0)
+    multipart-post (2.0.0)
+    pry (0.11.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.9.0)
     rack (2.0.3)
     sequel (5.2.0)
     slim (3.0.8)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 1.3.3, < 2.1)
     sqlite3 (1.3.13)
+    stripe (3.8.0)
+      faraday (~> 0.10)
     temple (0.8.0)
     tilt (2.0.8)
 
@@ -14,10 +24,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  pry
   rack
   sequel
   slim
   sqlite3
+  stripe
 
 RUBY VERSION
    ruby 2.4.0p0
